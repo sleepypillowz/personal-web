@@ -19,8 +19,47 @@ body {
     height: auto;
 }
 
-.round {
+.img-align-left {
     border-radius: 50%;
+    display: inline;
+    max-height: 26vh;
+    position: absolute;
+    left: 7.5vh;
+    opacity: 0.5;
+}
+
+.img-align-right {
+    border-radius: 50%;
+    display: inline;
+    max-height: 26vh;
+    position: absolute;
+    right: 7.5vh;
+    opacity: 0.5;
+}
+
+.img-align-left:hover {
+    opacity: 1;
+}
+
+.img-align-right:hover {
+    opacity: 1;
+}
+
+.label-align-left {
+    margin-top: 10vh;
+    position: absolute;
+    left: 40vh;
+}
+
+.label-align-right {
+    margin-top: 10vh;
+    position: absolute;
+    right: 40vh;
+}
+
+.horizontal-line {
+    margin-top: 27vh;
+    background-color: black;
 }
 
 .center {
@@ -28,10 +67,6 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-.container {
-    margin-top: 10vh;
 }
 
 #banner {
@@ -42,37 +77,8 @@ body {
 }
 
 #profile {
-    display: inline;
-    max-height: 26vh;
-    position: absolute;
-    left: 7.5vh;
+    opacity: 1;
 }
-
-#name {
-    position: absolute;
-    left: 40vh;
-}
-
-#hline {
-    margin-top: 27vh;
-    background-color: black;
-}
-
-#vline {
-    width: 400px;
-    height: 200px;
-    background: linear-gradient(to right,
-            transparent 0%,
-            transparent calc(50% - 0.81px),
-            black calc(50% - 0.8px),
-            black calc(50% + 0.8px),
-            transparent calc(50% + 0.81px),
-            transparent 100%);
-    margin-top: 8vh;
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-
 
 /* Most Device */
 @media screen and (max-width: 428px) {
@@ -84,7 +90,7 @@ body {
         transform: translate(-50%, -50%);
     }
 
-    #name {
+    .label-align-left {
         position: absolute;
         top: 33%;
         left: 50%;
@@ -106,7 +112,7 @@ body {
         transform: translate(-50%, -50%);
     }
 
-    #name {
+    .label-align-left {
         position: absolute;
         left: 50%;
         top: 35%;

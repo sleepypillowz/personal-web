@@ -34,6 +34,14 @@ p {
     transform: translate(-50%, -50%);
 }
 
+.card-title {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+  }
+
+  .card-text {
+    font-size: 0.875rem; /* Adjust the font size as needed */
+  }
+
 #banner {
 
     object-fit: cover;
@@ -106,3 +114,4 @@ p {
 
 
 }
+

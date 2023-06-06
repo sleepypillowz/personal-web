@@ -26,7 +26,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" style="margin-left: 8em;" aria-current="page" href="../home/home.html">Home</a>
+                    <a class="nav-link active" style="margin-left: 8em;" aria-current="page" href="../../index.html">Home</a>
                   </li>
                 </ul>
                 <button type="button" class="btn btn-light nav-item bi bi-envelope" title="Messages"></button>

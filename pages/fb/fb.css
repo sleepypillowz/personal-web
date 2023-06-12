@@ -68,6 +68,25 @@ p {
     background-color: black;
 }
 
+#profile2 {
+    border-radius: 50%;
+    max-height: 7vh;
+}
+
+#name2 {
+    margin-top: -7.5vh;
+    position: absolute;
+    left: 11vh;
+    display: block;
+}
+
+#time {
+    margin-top: -4vh;
+    position: absolute;
+    left: 11vh;
+    font-size: 12px;
+}
+
 /* Most Device */
 @media screen and (max-width: 428px) {
     #profile {

@@ -458,4 +458,14 @@ footer p {
   .certificate-grid {
     grid-template-columns: 1fr;
   }
+
+  .styled-contact {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
 }

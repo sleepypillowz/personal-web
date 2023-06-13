@@ -540,6 +540,18 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  #services {
+    margin-top: -70vh;
+  }
+
+  #education {
+    margin-top: 30vh;
+  }
+
+  #portfolio {
+    margin-top: -60vh;
+  }
+
   .education-card,
   .certificate-card {
     margin-bottom: 20px;
@@ -555,9 +567,7 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-    /* Adjust the margin as needed */
-    margin-bottom: 20px;
+    margin-top: 60vh;
     /* Adjust the margin as needed */
   }
 }

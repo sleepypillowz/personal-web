@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acojido | Personal Web</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script> 
+  <script src="script.js"></script>
 
 </head>
+
 <body>
-  <div id="loader"></div>
+  <!-- HTML element to display the loading animation -->
+  <div id="loader">
+    <div class="loader">
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
   <header>
     <div class="header-content">
       <h1>Alexander Acojido</h1>
@@ -24,10 +31,10 @@
           <li><a class="nav-link" href="#certificates">Certificates</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-      </nav>    
+      </nav>
     </div>
   </header>
-  
+
 
   <main>
     <section id="hero">
@@ -38,25 +45,30 @@
         <h1>Alexander Acojido</h1>
         <h2>Web Developer</h2>
         <div class="social-links">
-          <button class="social-button facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100055687421299', '_blank')"></button>
-          <button class="social-button github" onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
-          <button class="social-button linkedin" onclick="window.open('https://www.linkedin.com/in/alexander-thomas-acojido-051b631a3/', '_blank')"></button>
+          <button class="social-button facebook"
+            onclick="window.open('https://www.facebook.com/profile.php?id=100055687421299', '_blank')"></button>
+          <button class="social-button github"
+            onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
+          <button class="social-button linkedin"
+            onclick="window.open('https://www.linkedin.com/in/alexander-thomas-acojido-051b631a3/', '_blank')"></button>
           <!-- Add more social links here -->
         </div>
       </div>
     </section>
-    
-    
-    
-    
+
+
+
+
     <section id="about" class="standardized-about">
       <h2>About</h2>
       <div class="about-content">
-        <p>Hello, I'm Alexander Acojido, a passionate web developer with experience in HTML, CSS, and JavaScript. I have a strong focus on creating clean, user-friendly, and visually appealing websites. With a background in UI/UX design, I aim to deliver seamless and enjoyable user experiences.</p>
+        <p>Hello, I'm Alexander Acojido, a passionate web developer with experience in HTML, CSS, and JavaScript. I have
+          a strong focus on creating clean, user-friendly, and visually appealing websites. With a background in UI/UX
+          design, I aim to deliver seamless and enjoyable user experiences.</p>
       </div>
     </section>
-    
-    
+
+
     <section id="services" class="portfolio">
       <h2>Services</h2>
       <div class="portfolio-grid">
@@ -78,8 +90,8 @@
         </div>
       </div>
     </section>
-    
-    
+
+
     <section id="skills">
       <h2>Skills</h2>
       <ul class="skills-list">
@@ -115,39 +127,42 @@
         </li>
       </ul>
     </section>
-    
-    
-    
+
+
+
     <section id="portfolio">
       <h2>Portfolio</h2>
       <div class="portfolio-grid">
         <div class="portfolio-card">
           <a href="images/project1.png">
             <img src="images/project1.png" alt="Project 1">
-          </a>   
+          </a>
           <h3>Simple Personal Web</h3>
           <p>A simple Front Page for a personal website.</p>
-          <button class="social-button github" onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
+          <button class="social-button github"
+            onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
         </div>
         <div class="portfolio-card">
           <a href="images/project2.png">
             <img src="images/project2.png" alt="Project 2">
-          </a>   
+          </a>
           <h3>Coach Locator</h3>
           <p>QR based which contains a local database.</p>
-          <button class="social-button github" onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
+          <button class="social-button github"
+            onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
         </div>
         <div class="portfolio-card">
           <a href="images/project3.png">
             <img src="images/project3.png" alt="Project 3">
-          </a>   
+          </a>
           <h3>Maxxe Shop</h3>
           <p> A Website for buying lipsticks.</p>
-          <button class="social-button github" onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
+          <button class="social-button github"
+            onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
         </div>
       </div>
     </section>
-    
+
     <section id="education">
       <h2>Education</h2>
       <div class="education-card">
@@ -167,14 +182,14 @@
         <p>Kinder | 2008-2009</p>
       </div>
     </section>
-    
+
     <section id="certificates">
       <h2>Certificates</h2>
       <div class="certificate-grid">
         <div class="certificate-card">
           <a href="images/certificate1.jpg">
             <img src="images/certificate1.jpg" alt="Certificate 1">
-          </a>    
+          </a>
           <div class="certificate-content">
             <h3>StackLeague</h3>
             <p>Tips and Techniques for Software Developers</p>
@@ -184,7 +199,7 @@
         <div class="certificate-card">
           <a href="images/certificate2.jpg">
             <img src="images/certificate2.jpg" alt="Certificate 2">
-          </a> 
+          </a>
           <div class="certificate-content">
             <h3>SoloLearn</h3>
             <p>Introduction to HTML</p>
@@ -194,7 +209,7 @@
         <div class="certificate-card">
           <a href="images/certificate3.jpg">
             <img src="images/certificate3.jpg" alt="Certificate 3">
-          </a> 
+          </a>
           <div class="certificate-content">
             <h3>ZUITT</h3>
             <p>Basic Web Developement Workshop</p>
@@ -203,7 +218,7 @@
         </div>
       </div>
     </section>
-    
+
     <section id="contact" class="styled-contact">
       <h2>Contact</h2>
       <div class="contact-info">
@@ -222,4 +237,5 @@
   </footer>
 
 </body>
+
 </html>

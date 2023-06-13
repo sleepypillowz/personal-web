@@ -297,6 +297,44 @@ footer p {
 }
 /* education */
 
+/* certificate */
+#certificates {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.certificate-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card img {
+  max-width: 100%;
+}
+
+.certificate-content {
+  margin-top: 20px;
+}
+
+.certificate-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.certificate-content p {
+  font-size: 14px;
+  color: #777;
+}
+/* certificate */
+
 /* contact */
 #contact.styled-contact {
   background-color: #f4f4f4;
@@ -336,22 +374,77 @@ footer p {
 }
 /* contact */
 
+/* social */
+#social {
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+#social h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.social-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list li {
+  margin-right: 10px;
+}
+
+.social-list li a {
+  color: #888;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-list li a:hover {
+  color: #333;
+}
+/* contact */
+
 /* Media queries */
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  
   .header-content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
-
-  nav ul {
-    margin-top: 10px;
+  
+  .header-content h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
-
-  main {
-    padding: 10px;
+  
+  nav {
+    display: none; /* Hide the navigation bar on mobile */
   }
-
+  
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .hero-content h2 {
+    font-size: 18px;
+  }
+  
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+  
+  .education-card,
+  .certificate-card {
+    margin-bottom: 20px;
+  }
+  
+  .certificate-grid {
+    grid-template-columns: 1fr;
   }
 }

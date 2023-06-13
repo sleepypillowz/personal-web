@@ -9,93 +9,131 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <h1>Alexander Acojido</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  
 
   <main>
     <section id="hero">
       <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/profile.png" alt="Hero Image">
+        </div>
         <h1>Alexander Acojido</h1>
         <h2>Web Developer</h2>
-        <a href="#contact" class="cta-button">Get in Touch</a>
       </div>
     </section>
-
-    <section id="about">
+    
+    
+    <section id="about" class="standardized-about">
       <h2>About Me</h2>
-      <p>Hello, I'm Alexander Acojido, a passionate web developer with experience in HTML, CSS, and JavaScript. I have a strong focus on creating clean, user-friendly, and visually appealing websites. With a background in UI/UX design, I aim to deliver seamless and enjoyable user experiences.</p>
+      <div class="about-content">
+        <p>Hello, I'm Alexander Acojido, a passionate web developer with experience in HTML, CSS, and JavaScript. I have a strong focus on creating clean, user-friendly, and visually appealing websites. With a background in UI/UX design, I aim to deliver seamless and enjoyable user experiences.</p>
+      </div>
     </section>
-
+    
+    
+    <section id="services" class="portfolio">
+      <h2>Services</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <h3>Website Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Responsive Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Front-end Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Back-end Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+    
+    
     <section id="skills">
       <h2>Skills</h2>
-      <ul class="skill-list">
-        <li>
-          <span class="skill-name">HTML5</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
+      <ul class="skills-list">
+        <li class="skill-item">
+          <span class="skill-item-title">HTML5</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 80%;"></div>
           </div>
         </li>
-        <li>
-          <span class="skill-name">CSS3</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 50%;"></div>
+        <li class="skill-item">
+          <span class="skill-item-title">CSS3</span>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 75%;"></div>
           </div>
         </li>
-        <li>
-          <span class="skill-name">JavaScript</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 10%;"></div>
-          </div>
-        </li>
-        <!-- Add more skills here -->
       </ul>
     </section>
     
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A showcase of my skills and projects, built using HTML, CSS, and JavaScript. Responsive design for optimal viewing on different devices.</p>
-        <a href="https://example.com/portfolio" target="_blank" rel="noopener noreferrer">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>E-commerce Store</h3>
-        <p>An online store built with React.js, Node.js, and MongoDB. Features product listings, shopping cart functionality, and secure checkout.</p>
-        <a href="https://example.com/store" target="_blank" rel="noopener noreferrer">View Project</a>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="image-gallery">
-        <a href="images/profile.png" data-lightbox="gallery" data-title="Image 1">
-          <img src="images/profile.png" alt="Image 1">
-        </a>
-        <a href="images/profile.png" data-lightbox="gallery" data-title="Image 2">
-          <img src="images/profile.png" alt="Image 2">
-        </a>
-        <a href="images/profile.png" data-lightbox="gallery" data-title="Image 3">
-          <img src="images/profile.png" alt="Image 3">
-        </a>
-        <!-- Add more image links here -->
+    
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="images/project1.png" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="portfolio-card">
+          <img src="images/project2.png" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="portfolio-card">
+          <img src="images/project3.png" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
     </section>
-
-    <section id="contact">
+    
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-card">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>University XYZ</p>
+      </div>
+      <div class="education-card">
+        <h3>Web Development Certification</h3>
+        <p>Online Course ABC</p>
+      </div>
+    </section>
+    
+    
+    <section id="contact" class="styled-contact">
       <h2>Contact</h2>
-      <p>If you'd like to discuss a project or have any inquiries, feel free to reach out to me.</p>
-      <p>Email: <a href="mailto:alexacojido@gmail.com">alexacojido@gmail.com</a></p>
-      <p>Phone: <a href="tel:+639690284440">+63 969-028-4440</a></p>
+      <div class="contact-info">
+        <p>If you have any inquiries or would like to work together, feel free to reach out to me:</p>
+        <ul>
+          <li><strong>Email:</strong> alexander@example.com</li>
+          <li><strong>Phone:</strong> 123-456-7890</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alexander-acojido">https://www.linkedin.com/in/alexander-acojido</a></li>
+        </ul>
+      </div>
     </section>
+       
   </main>
 
   <footer>
@@ -103,6 +141,5 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>

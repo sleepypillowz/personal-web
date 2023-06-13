@@ -1,12 +1,14 @@
-// Smooth scrolling on anchor links
 document.addEventListener('DOMContentLoaded', function() {
-    const scrollLinks = document.querySelectorAll('a[href^="#"]');
-    for (const scrollLink of scrollLinks) {
-      scrollLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = scrollLink.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+    var navLinks = document.querySelectorAll('.nav-link');
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.classList.add('scroll-offset');
+          window.location.hash = this.getAttribute('href');
+          target.classList.remove('scroll-offset');
+        }
       });
     }
   });

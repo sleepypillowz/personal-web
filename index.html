@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexander Acojido | Web Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="script.js"></script> 
 
 </head>
 <body>
@@ -14,14 +14,15 @@
       <h1>Alexander Acojido</h1>
       <nav>
         <ul class="nav-list">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </nav>    
     </div>
   </header>
   
@@ -34,8 +35,16 @@
         </div>
         <h1>Alexander Acojido</h1>
         <h2>Web Developer</h2>
+        <div class="social-links">
+          <button class="social-button facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100055687421299', '_blank')"></button>
+          <button class="social-button github" onclick="window.open('https://github.com/sleepypillowz', '_blank')"></button>
+          <button class="social-button linkedin" onclick="window.open('https://www.linkedin.com/in/alexander-thomas-acojido-051b631a3/', '_blank')"></button>
+          <!-- Add more social links here -->
+        </div>
       </div>
     </section>
+    
+    
     
     
     <section id="about" class="standardized-about">
@@ -62,7 +71,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="portfolio-card">
-          <h3>Back-end Development</h3>
+          <h3>Figma Design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
@@ -121,11 +130,7 @@
       </div>
       <div class="education-card">
         <h3>Ste Anne de Beaupre</h3>
-        <p>Grade 11-12 | 2019-2021 | STEM</p>
-      </div>
-      <div class="education-card">
-        <h3>Ste Anne de Beaupre</h3>
-        <p>Grade 1-10 | 2009-2019</p>
+        <p>Grade 1-12 | 2009-2021 | STEM</p>
       </div>
       <div class="education-card">
         <h3>Divine Light Academy</h3>
@@ -191,6 +196,5 @@
     <p>&copy; 2023 Alexander Acojido. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>

@@ -540,18 +540,6 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  #services {
-    margin-top: -70vh;
-  }
-
-  #education {
-    margin-top: 30vh;
-  }
-
-  #portfolio {
-    margin-top: -60vh;
-  }
-
   .education-card,
   .certificate-card {
     margin-bottom: 20px;
@@ -570,4 +558,29 @@ footer p {
     margin-top: 60vh;
     /* Adjust the margin as needed */
   }
+
+  #about {
+    margin-top: -60vh;
+  }
+
+  #services {
+    margin-top: 115vh;
+  }
+
+  #skills {
+    margin-top: -50vh;
+  }
+
+  #portfolio {
+    margin-top: -65vh;
+  }
+
+  #education {
+    margin-top: -5vh;
+  }
+
+  #certificates {
+    margin-top: -40vh;
+  }
+
 }

@@ -8,6 +8,14 @@ h1 {
   @apply text-xl font-bold pb-4
 }
 
+ul {
+  @apply grid grid-cols-2 gap-3 md:grid-cols-3
+}
+
+li {
+  @apply bg-gray-200 border border-transparent rounded-full flex items-center justify-center md:px-3
+}
+
 a {
   @apply bg-gray-200 border border-transparent rounded-full flex items-center justify-center md:px-3
 }

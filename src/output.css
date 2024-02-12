@@ -605,6 +605,18 @@ svg {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -618,8 +630,24 @@ svg {
   display: flex;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .w-40 {
   width: 10rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .justify-center {
@@ -649,6 +677,10 @@ svg {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-40 {
+  padding: 10rem;
 }
 
 .text-center {

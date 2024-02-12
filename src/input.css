@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+ul {
+  @apply mt-4 flex text-sm font-semibold text-gray-800
+}
+
+li {
+  @apply mr-2 rounded-md bg-gray-100 px-2 py-1
+}
+
+}

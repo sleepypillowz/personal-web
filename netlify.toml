@@ -1,0 +1,3 @@
+[build]
+  command = "npm run build:deploy"  # Adjust this based on your build script
+  publish = "dist"          # Adjust this based on your output folder

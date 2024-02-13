@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,19 +15,23 @@ ul {
 }
 
 li {
-  @apply bg-gray-200 border border-transparent rounded-full flex items-center justify-center md:px-3
+  @apply bg-gray-200 rounded-full border border-transparent flex items-center justify-center md:px-3
 }
 
 a {
-  @apply bg-gray-200 border border-transparent rounded-full flex items-center justify-center md:px-3
+  @apply bg-purple-200 rounded-full border border-transparent flex items-center justify-center md:px-3 transition ease-in-out hover:-translate-y-0.5 hover:scale-110 hover:bg-purple-300 duration-300
 }
 
 svg {
-  @apply fill-current h-5 w-5
+  @apply h-5 w-5 fill-current 
 }
 
 }
 
 .list {
   @apply grid grid-cols-2 gap-3 md:grid-cols-3
+}
+
+.icon {
+  @apply h-5 w-5 fill-current 
 }

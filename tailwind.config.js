@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'polka': "url('/assets/images/polka.png')"
+      },
+      fontFamily: {
+        ubuntu: ['Ubuntu']
+      }
+    },
   },
   plugins: [],
 }

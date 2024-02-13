@@ -19,7 +19,7 @@ li {
 }
 
 a {
-  @apply bg-purple-200 rounded-full border border-transparent flex items-center justify-center md:px-3 transition ease-in-out hover:-translate-y-0.5 hover:scale-110 hover:bg-purple-300 duration-300
+  @apply bg-gray-200 rounded-full border border-transparent flex items-center justify-center md:px-3 transition ease-in-out hover:-translate-y-0.5 hover:scale-110 hover:bg-gray-300 duration-300
 }
 
 svg {

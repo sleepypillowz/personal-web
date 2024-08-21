@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -11,12 +11,18 @@
   <script src="https://kit.fontawesome.com/c9fdc5e2e7.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-light-gray text-gray-950">
-  <main class="m-4 my-12 flex max-w-5xl flex-col space-y-4 rounded-md md:mx-auto">
+<body class="dark:bg-zinc-700 dark:text-zinc-300 bg-zinc-200 text-xs text-zinc-800 sm:text-base">
+
+  <!-- Mode -->
+  <div class="dark:bg-zinc-600 fixed bottom-0 left-0 mb-4 ml-4 rounded-lg px-2 py-1">
+    <i class="fa-regular fa-sun"></i>
+  </div>
+
+  <main class="m-4 my-12 flex max-w-5xl flex-col space-y-4 rounded-md lg:mx-auto">
 
     <!-- Profile -->
-    <div class="rounded-lg bg-light-white">
-      <div class="md:flex md:justify-between">
+    <div class="card">
+      <div class="sm:flex sm:justify-between">
         <div>
           <h1>Alexander Acojido</h1>
           <h2 class="mb-4 ml-4">Software Engineer</h2>
@@ -37,20 +43,20 @@
     </div>
 
     <!-- Skills -->
-    <div class="rounded-lg bg-light-white">
+    <div class="card">
       <h1>Skills</h1>
 
       <h2>I already know</h2>
-      <ul class="m-4 flex space-x-4">
-        <li class="ml-4 bg-light-orange">
+      <ul class="m-4 flex max-w-fit flex-wrap space-x-4">
+        <li class="mb-4 ml-4 bg-orange-200">
           <i class="fa-brands fa-html5 fa-lg"></i>
           HTML
         </li>
-        <li class="bg-light-blue">
+        <li class="mb-4 bg-sky-200">
           <i class="fa-brands fa-css3 fa-lg"></i>
           CSS
         </li>
-        <li class="bg-blue">
+        <li class="mb-4 bg-blue-200">
           <i class="fa-brands fa-python fa-lg"></i>
           Python
         </li>
@@ -58,7 +64,7 @@
 
       <h2>I want to learn</h2>
       <ul class="m-4 flex space-x-4">
-        <li class="ml-4 bg-dark-blue">
+        <li class="ml-4 bg-indigo-200">
           <i class="fa-brands fa-react fa-lg"></i>
           React
         </li>
@@ -67,7 +73,7 @@
     </div>
 
     <!-- Projects -->
-    <div class="rounded-lg bg-light-white">
+    <div class="card">
       <h1>Projects</h1>
 
       <!-- Project 1 -->
@@ -75,9 +81,9 @@
         <div class="flex justify-between">
           <div>
             <h2>FAQ Accordion</h2>
-            <p class="ml-8 font-light">Febraury 2024</p>
+            <p class="ml-8 font-light">February 2024</p>
           </div>
-          <div class="mr-8 space-x-2">
+          <div class="ml-4 mr-8 flex flex-wrap gap-2">
 
             <a href="https://sleepypillowz-faq-accordion.netlify.app/">
               <i class="fa-solid fa-globe fa-xl"></i>
@@ -99,9 +105,9 @@
         <div class="flex justify-between">
           <div>
             <h2>Blog Preview</h2>
-            <p class="ml-8 font-light">Febraury 2024</p>
+            <p class="ml-8 font-light">February 2024</p>
           </div>
-          <div class="mr-8 space-x-2">
+          <div class="ml-4 mr-8 flex flex-wrap gap-2">
 
             <a href="https://sleepypillowz-blog-preview.netlify.app/">
               <i class="fa-solid fa-globe fa-xl"></i>
@@ -125,7 +131,7 @@
             <h2>Recipe Page</h2>
             <p class="ml-8 font-light">January 2024</p>
           </div>
-          <div class="mr-8 space-x-2">
+          <div class="ml-4 mr-8 flex flex-wrap gap-2">
 
             <a href="https://sleepypillowz-recipe-page.netlify.app/">
               <i class="fa-solid fa-globe fa-xl"></i>
@@ -149,7 +155,7 @@
             <h2>Social Links</h2>
             <p class="ml-8 font-light">January 2024</p>
           </div>
-          <div class="mr-8 space-x-2">
+          <div class="ml-4 mr-8 flex flex-wrap gap-2">
 
             <a href="https://sleepypillowz-social-links.netlify.app/">
               <i class="fa-solid fa-globe fa-xl"></i>

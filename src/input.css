@@ -3,6 +3,15 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
 
+@layer base {
+  @font-face {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url(/fonts/Inter28pt.ttf) format('ttf');
+  }
+}
 
 h1 {
   @apply m-4 text-xl sm:text-4xl font-bold font-inter
@@ -17,23 +26,25 @@ h3 {
 }
 
 li {
-  @apply bg-gray-100 rounded-lg px-3 py-1 text-zinc-800 opacity-90 hover:opacity-100
+  @apply rounded-lg pr-2 py-1 text-zinc-800 opacity-90 hover:opacity-100
 }
 
 hr {
   @apply dark:hidden
 }
 
+.skill-container {
+  @apply flex items-center justify-center rounded-lg max-w-fit gap-1
+}
+
 .card {
   @apply dark:bg-zinc-800 rounded-lg bg-zinc-50
 }
 
-@layer base {
-  @font-face {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    src: url(/fonts/Inter28pt.ttf) format('ttf');
-  }
+.icon {
+  @apply h-8 w-8
+}
+
+.project-container {
+  @apply ml-4 mr-8 flex flex-wrap gap-2
 }

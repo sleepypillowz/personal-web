@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="" lang="en">
+<html id="html" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -14,10 +14,10 @@
 <body class="dark:bg-zinc-700 dark:text-zinc-300 bg-zinc-200 text-xs text-zinc-800 sm:text-base">
 
   <!-- Mode -->
-  <div
+  <button onClick="toggleMode()"
     class="dark:bg-zinc-600 dark:text-zinc-100 fixed bottom-0 left-0 mb-4 ml-4 rounded-lg bg-zinc-300 px-2 py-1 text-zinc-900">
     <i class="fa-regular fa-sun"></i>
-  </div>
+  </button>
 
   <main class="m-4 my-12 flex max-w-5xl flex-col sm:space-y-4 lg:mx-auto">
 
@@ -166,7 +166,23 @@
 
 </body>
 
+<script>
+
+  function toggleMode() {
+    // if html tag doesn't have dark class
+    if (!document.getElementById("html").classList.contains('dark')) {
+      isDarkMode = false;
+      document.getElementById("html").classList.add('dark')
+    } else {
+      isDarkMode = true;
+      document.getElementById("html").classList.remove('dark');
+    }
+  }
+</script>
+
+
 <script src="https://kit.fontawesome.com/c9fdc5e2e7.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+<script src="app.js"></script>
 
 </html>

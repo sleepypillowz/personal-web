@@ -744,7 +744,8 @@ li:hover {
 }
 
 hr:where(.dark, .dark *) {
-  display: none;
+  --tw-border-opacity: 1;
+  border-color: rgb(63 63 70 / var(--tw-border-opacity));
 }
 
 .skill-container {
@@ -800,16 +801,8 @@ hr:where(.dark, .dark *) {
 }
 
 @media (min-width: 640px) {
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:justify-between {
-    justify-content: space-between;
   }
 
   .sm\:space-y-4 > :not([hidden]) ~ :not([hidden]) {

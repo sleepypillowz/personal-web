@@ -30,7 +30,7 @@ li {
 }
 
 hr {
-  @apply dark:hidden
+  @apply dark:border-zinc-700
 }
 
 .skill-container {

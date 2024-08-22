@@ -8,38 +8,41 @@
               that showcases his profile skills and projects.">
   <title>Acojido</title>
   <link href="./output.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c9fdc5e2e7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="dark:bg-zinc-700 dark:text-zinc-300 bg-zinc-200 text-xs text-zinc-800 sm:text-base">
 
   <!-- Mode -->
-  <div class="dark:bg-zinc-600 fixed bottom-0 left-0 mb-4 ml-4 rounded-lg px-2 py-1">
+  <div
+    class="dark:bg-zinc-600 dark:text-zinc-100 fixed bottom-0 left-0 mb-4 ml-4 rounded-lg bg-zinc-300 px-2 py-1 text-zinc-900">
     <i class="fa-regular fa-sun"></i>
   </div>
 
-  <main class="m-4 my-12 flex max-w-5xl flex-col space-y-4 rounded-md lg:mx-auto">
+  <main class="m-4 my-12 flex max-w-5xl flex-col sm:space-y-4 lg:mx-auto">
 
     <!-- Profile -->
     <div class="card">
-      <div class="sm:flex sm:justify-between">
+      <div class="flex justify-between">
         <div>
           <h1>Alexander Acojido</h1>
           <h2 class="mb-4 ml-4">Software Engineer</h2>
         </div>
-        <div class="m-4 flex space-x-2">
-
-          <a href="https://github.com/sleepypillowz">
-            <img class="icon" src="../assets/icons/github.png" alt="github">
-          </a>
+        <div class="link-container">
 
           <a href="https://www.linkedin.com/in/alexacojido/">
             <img class="icon" src="../assets/icons/linkedin.png" alt="linkedin">
           </a>
 
+          <a href="https://github.com/sleepypillowz">
+            <img class="icon" src="../assets/icons/github.png" alt="github">
+          </a>
+
         </div>
       </div>
     </div>
+
+    <hr class="sm:hidden">
 
     <!-- Skills -->
     <div class="card">
@@ -67,17 +70,19 @@
 
     </div>
 
+    <hr class="sm:hidden">
+
     <!-- Projects -->
     <div class="card space-y-4">
       <h1>Projects</h1>
 
       <!-- Project 1 -->
       <div>
-        <div class="flex justify-between">
-          <div>
+        <div class="flex items-center justify-between">
+          <div class="project-title-container">
             <h2>FAQ Accordion</h2>
           </div>
-          <div class="project-container">
+          <div class="link-container">
 
             <a href="https://sleepypillowz-faq-accordion.netlify.app/">
               <img class="icon" src="../assets/icons/website.png" alt="website">
@@ -96,12 +101,12 @@
       <!-- Project 2 -->
       <div>
         <div class="flex justify-between">
-          <div>
+          <div class="project-title-container">
             <h2>Blog Preview</h2>
           </div>
-          <div class="project-container">
+          <div class="link-container">
 
-            <a href="https://sleepypillowz-faq-accordion.netlify.app/">
+            <a href="https://sleepypillowz-blog-preview.netlify.app/">
               <img class="icon" src="../assets/icons/website.png" alt="website">
             </a>
 
@@ -118,12 +123,12 @@
       <!-- Project 3 -->
       <div>
         <div class="flex justify-between">
-          <div>
+          <div class="project-title-container">
             <h2>Recipe Page</h2>
           </div>
-          <div class="project-container">
+          <div class="link-container">
 
-            <a href="https://sleepypillowz-faq-accordion.netlify.app/">
+            <a href="https://sleepypillowz-recipe-page.netlify.app/">
               <img class="icon" src="../assets/icons/website.png" alt="website">
             </a>
 
@@ -140,12 +145,12 @@
       <!-- Project 4 -->
       <div class="pb-4">
         <div class="flex justify-between">
-          <div>
+          <div class="project-title-container">
             <h2>Social Links</h2>
           </div>
-          <div class="project-container">
+          <div class="link-container">
 
-            <a href="https://sleepypillowz-faq-accordion.netlify.app/">
+            <a href="https://sleepypillowz-social-links.netlify.app/">
               <img class="icon" src="../assets/icons/website.png" alt="website">
             </a>
             <a href="https://github.com/sleepypillowz/social-links">
@@ -160,5 +165,8 @@
   </main>
 
 </body>
+
+<script src="https://kit.fontawesome.com/c9fdc5e2e7.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
 
 </html>
